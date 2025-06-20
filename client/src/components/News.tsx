@@ -1,4 +1,3 @@
-import React from 'react';
 import { Calendar, ArrowRight, Award, Users, BookOpen } from 'lucide-react';
 
 const News = () => {

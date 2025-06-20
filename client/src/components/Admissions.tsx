@@ -1,5 +1,4 @@
-import React from 'react';
-import { CheckCircle, Calendar, FileText, Users, DollarSign, BookOpen } from 'lucide-react';
+import { CheckCircle, BookOpen } from 'lucide-react';
 
 const Admissions = () => {
   const requirements = [

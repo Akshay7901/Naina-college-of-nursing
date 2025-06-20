@@ -1,5 +1,4 @@
-import React from 'react';
-import { Calendar, Users, Award, ArrowRight, Clock, CheckCircle } from 'lucide-react';
+import { Calendar, ArrowRight, Clock } from 'lucide-react';
 
 const AdmissionBanner = () => {
   const scrollToSection = (href: string) => {
@@ -9,39 +8,9 @@ const AdmissionBanner = () => {
     }
   };
 
-  const highlights = [
-    {
-      icon: Calendar,
-      title: "Application Deadline",
-      description: "March 1, 2025",
-      color: "bg-red-500"
-    },
-    {
-      icon: Users,
-      title: "Limited Seats",
-      description: "Only 120 spots available",
-      color: "bg-orange-500"
-    },
-    {
-      icon: Award,
-      title: "Scholarships Available",
-      description: "Up to $8,000/year",
-      color: "bg-green-500"
-    },
-    {
-      icon: Clock,
-      title: "Early Decision",
-      description: "Apply by Dec 15 for priority",
-      color: "bg-blue-500"
-    }
-  ];
+  
 
-  const quickFacts = [
-    "98% NCLEX Pass Rate",
-    "95% Job Placement Rate",
-    "15:1 Student-Faculty Ratio",
-    "50+ Clinical Partners"
-  ];
+  
 
   return (
     <section className="py-20 bg-gradient-to-br from-blue-900 via-blue-800 to-purple-900 relative overflow-hidden">

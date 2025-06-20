@@ -1,19 +1,17 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import {
   Microscope,
   Heart,
   BookOpen,
   Laptop,
-  GraduationCap,
   ChevronLeft,
   ChevronRight
 } from 'lucide-react';
 
-
 const Facilities = () => {
-  const scrollRef = useRef(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
 
-  const scroll = (direction) => {
+  const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
       scrollRef.current.scrollBy({
         left: direction === 'left' ? -300 : 300,

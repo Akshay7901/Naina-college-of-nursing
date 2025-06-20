@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Tilt from "react-parallax-tilt";
@@ -79,7 +79,7 @@ const About = () => {
               Naina College of Nursing offers high-quality undergraduate nursing
               programs. These programs are designed to cultivate skilled,
               ethical, and compassionate nursing professionals equipped to meet
-              the evolving needs of the healthcare sector.
+              the evolving needs of the healthcare sector.
             </p>
 
             {/* CTA Buttons */}

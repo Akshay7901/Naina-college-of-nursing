@@ -1,5 +1,4 @@
-import React from 'react';
-import { Stethoscope, Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 
 const Footer = () => {
   const scrollToSection = (href: string) => {
@@ -73,7 +72,7 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-blue-400 mt-1 flex-shrink-0" />
                 <div className="text-gray-300">
-                  <p>Naina college of nursing , Nagchala, NH 21 , Distt. Mandi Himachal Pradesh Pincode. 175021</p>
+                  <p>Naina college of nursing , Nagchala, NH 21 , Distt. Mandi Himachal Pradesh Pincode.175021</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
