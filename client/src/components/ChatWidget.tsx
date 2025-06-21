@@ -1,5 +1,12 @@
 import React, { useState } from 'react';
-import { MessageCircle, X, Send, ChevronDown, ChevronUp } from 'lucide-react';
+import {
+  MessageCircle,
+  X,
+  Send,
+  ChevronDown,
+  ChevronUp,
+  Phone
+} from 'lucide-react';
 
 interface FAQ {
   id: number;
@@ -98,26 +105,38 @@ const ChatWidget: React.FC = () => {
 
   return (
     <>
-      {/* Chat Button */}
-      <div className="fixed bottom-6 right-6 z-50">
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className={`bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-lg transition-all duration-300 ${
-            isOpen ? 'rotate-180' : 'animate-bounce'
-          }`}
+      {/* 🔵 Toggle + Phone Icon Buttons */}
+      <div className="fixed bottom-6 right-6 flex flex-col items-end gap-3 z-50">
+        {/* 📞 Phone Button */}
+        <a
+          href="tel:+917018481747"
+          className="bg-green-600 hover:bg-green-700 text-white w-14 h-14 flex items-center justify-center rounded-full shadow-lg transition-all duration-300"
+          title="Call Us"
         >
-          {isOpen ? <X className="h-6 w-6" /> : <MessageCircle className="h-6 w-6" />}
-        </button>
-        
-        {/* Notification Badge */}
-        {!isOpen && (
-          <div className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-6 h-6 flex items-center justify-center animate-pulse">
-            ?
-          </div>
-        )}
+          <Phone className="w-6 h-6" />
+        </a>
+
+        {/* 💬 Chat Toggle Button with Badge */}
+        <div className="relative">
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className={`bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-lg transition-all duration-300 ${
+              isOpen ? 'rotate-180' : 'animate-bounce'
+            }`}
+          >
+            {isOpen ? <X className="h-6 w-6" /> : <MessageCircle className="h-6 w-6" />}
+          </button>
+
+          {/* ❓ Notification Badge (only when closed) */}
+          {!isOpen && (
+            <div className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center animate-pulse">
+              ?
+            </div>
+          )}
+        </div>
       </div>
 
-      {/* Chat Widget */}
+      {/* 🔵 Chat Widget */}
       {isOpen && (
         <div className="fixed bottom-24 right-6 w-96 max-w-[calc(100vw-2rem)] h-[500px] bg-white rounded-2xl shadow-2xl border z-50 flex flex-col">
           {/* Header */}
@@ -184,7 +203,6 @@ const ChatWidget: React.FC = () => {
                       <ChevronDown className="h-4 w-4 text-gray-500 flex-shrink-0" />
                     )}
                   </button>
-                  
                   {selectedFAQ?.id === faq.id && (
                     <div className="px-3 pb-3 text-gray-700 text-sm leading-relaxed border-t border-gray-100 pt-3 bg-gray-50">
                       {faq.answer}

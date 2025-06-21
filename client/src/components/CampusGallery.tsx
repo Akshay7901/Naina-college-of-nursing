@@ -22,6 +22,26 @@ const CampusGallery = () => {
       title: "Student Study Areas",
       description: "Comfortable collaborative spaces designed for group study and discussion"
     },
+    {
+      url: "/src/Assets/pic6.jpg",
+      title: "Student Study Areas",
+      description: "Comfortable collaborative spaces designed for group study and discussion"
+    },
+    {
+      url: "/src/Assets/pic7.jpg",
+      title: "Student Study Areas",
+      description: "Comfortable collaborative spaces designed for group study and discussion"
+    },
+    {
+      url: "/src/Assets/pic8.jpg",
+      title: "Student Study Areas",
+      description: "Comfortable collaborative spaces designed for group study and discussion"
+    },
+    {
+      url: "/src/Assets/pic9.jpg",
+      title: "Student Study Areas",
+      description: "Comfortable collaborative spaces designed for group study and discussion"
+    },
     
   ];
 
@@ -57,7 +77,7 @@ const CampusGallery = () => {
           <div className="flex items-center justify-center space-x-3 mb-4">
             <Camera className="w-8 h-8 text-blue-400" />
             <h2 className="text-4xl font-bold text-white">
-              Explore Our Campus
+              Campus Gallery
             </h2>
           </div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
@@ -167,23 +187,7 @@ const CampusGallery = () => {
         </div>
 
         {/* Campus Stats */}
-        <div className="grid md:grid-cols-3 gap-8 mt-20">
-          <div className="text-center p-6 bg-gray-800 rounded-xl">
-            <div className="text-3xl font-bold text-blue-400 mb-2">50,000</div>
-            <div className="text-gray-300">Square Feet</div>
-            <div className="text-sm text-gray-400 mt-1">Modern Facilities</div>
-          </div>
-          <div className="text-center p-6 bg-gray-800 rounded-xl">
-            <div className="text-3xl font-bold text-blue-400 mb-2">12</div>
-            <div className="text-gray-300">Simulation Labs</div>
-            <div className="text-sm text-gray-400 mt-1">High-Tech Equipment</div>
-          </div>
-          <div className="text-center p-6 bg-gray-800 rounded-xl">
-            <div className="text-3xl font-bold text-blue-400 mb-2">24/7</div>
-            <div className="text-gray-300">Library Access</div>
-            <div className="text-sm text-gray-400 mt-1">Study Resources</div>
-          </div>
-        </div>
+        
       </div>
     </section>
   );

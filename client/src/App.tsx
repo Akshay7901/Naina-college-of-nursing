@@ -19,10 +19,10 @@ function App() {
       {/* <AdmissionBanner /> */}
       <About />
       <Programs />
+      <Faculty />
       <CampusGallery />
       <Facilities />
       <Admissions />
-      <Faculty />
       <News />
       <ChatWidget />
       <Footer />

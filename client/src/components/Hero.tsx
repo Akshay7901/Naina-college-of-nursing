@@ -23,7 +23,7 @@ const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen flex flex-col items-center">
       {/* Background Video */}
-      <div className="absolute inset-0 z-0 mt-12">
+      <div className="absolute inset-0 z-0 mt-2">
         <video autoPlay loop muted playsInline className="w-full h-full object-cover">
           <source src="src/video/video1.mp4" type="video/mp4" />
         </video>
@@ -31,8 +31,8 @@ const Hero = () => {
       </div>
 
       {/* Foreground Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 mt-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center text-white mt-10">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 mt-10">
+        <div className="grid lg:grid-cols-2 gap-12 items-center text-white ">
           <div>
             <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
               Shape the Future of
@@ -57,7 +57,7 @@ const Hero = () => {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-8">
+            <div className="grid grid-cols-3 gap-8 mt-20">
               <div className="text-center">
                 <div className="flex items-center justify-center w-12 h-12 bg-cyan-500 rounded-lg mx-auto mb-2">
                   <Award className="w-6 h-6 text-white" />

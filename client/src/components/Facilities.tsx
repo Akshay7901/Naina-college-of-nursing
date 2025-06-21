@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 import {
   Microscope,
   Heart,
@@ -10,15 +10,25 @@ import {
 
 const Facilities = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
+  const itemWidth = 320; // Approximate width + margin
 
   const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
       scrollRef.current.scrollBy({
-        left: direction === 'left' ? -300 : 300,
+        left: direction === 'left' ? -itemWidth : itemWidth,
         behavior: 'smooth',
       });
     }
   };
+
+  // Auto scroll effect
+  useEffect(() => {
+    const interval = setInterval(() => {
+      scroll('right');
+    }, 3000);
+
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, []);
 
   const facilities = [
     {
@@ -75,13 +85,13 @@ const Facilities = () => {
         {/* Scroll Arrows */}
         <button
           onClick={() => scroll('left')}
-          className="absolute left-4 top-[35%] z-10 bg-white p-2 rounded-full shadow hover:bg-gray-100"
+          className="hidden sm:flex absolute left-4 top-[35%] z-10 bg-white p-2 rounded-full shadow hover:bg-gray-100"
         >
           <ChevronLeft className="w-6 h-6 text-gray-700" />
         </button>
         <button
           onClick={() => scroll('right')}
-          className="absolute right-4 top-[35%] z-10 bg-white p-2 rounded-full shadow hover:bg-gray-100"
+          className="hidden sm:flex absolute right-4 top-[35%] z-10 bg-white p-2 rounded-full shadow hover:bg-gray-100"
         >
           <ChevronRight className="w-6 h-6 text-gray-700" />
         </button>
@@ -89,12 +99,12 @@ const Facilities = () => {
         {/* Scrollable Facilities */}
         <div
           ref={scrollRef}
-          className="flex overflow-x-auto scrollbar-hide space-x-6 pb-4 scroll-smooth"
+          className="flex overflow-x-auto scrollbar-hide space-x-6 pb-4 scroll-smooth pl-4 pr-4 -ml-4 -mr-4 sm:mx-0"
         >
           {facilities.map((facility, index) => (
             <div
               key={index}
-              className="min-w-[280px] max-w-xs bg-white rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 flex-shrink-0"
+              className="min-w-[280px] sm:min-w-[320px] max-w-xs bg-white rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 flex-shrink-0"
             >
               <div className="h-48 overflow-hidden rounded-t-2xl">
                 <img

@@ -8,7 +8,7 @@ const Faculty = () => {
       image: "/src/Assets/NB.jpg",
     },
     {
-      name: "Mr Prem Dogra",
+      name: "Mr. Prem Dogra",
       title: "Managing  Director",
       image: "/src/Assets/director.jpg",
     },
