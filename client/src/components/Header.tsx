@@ -88,7 +88,7 @@ const Header = () => {
           <div className="flex justify-between items-center py-4">
             {/* Logo + Title */}
             <div className="flex items-start space-x-3">
-              <img src="/src/Assets/logo.jpg" alt="Logo" className="h-20 w-auto" />
+              <img src="/logo.jpg" alt="Logo" className="h-20 w-auto" />
               <div className="flex flex-col justify-center mt-2">
                 <h1 className="text-xl sm:text-2xl font-bold text-blue-900 leading-snug">
                   NAINA COLLEGE<br />OF NURSING
