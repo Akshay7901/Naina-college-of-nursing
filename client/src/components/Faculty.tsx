@@ -5,18 +5,18 @@ const Faculty = () => {
       name: "Dr. Noble Sharma",
       title: "Founder & Chairperson (CEO)",
       credentials: "Ph.D , M.sc Medical Surgical Nursing",
-      image: "/src/Assets/NB.jpg",
+      image: "/NB.jpg",
     },
     {
       name: "Mr. Prem Dogra",
       title: "Managing  Director",
-      image: "/src/Assets/director.jpg",
+      image: "/director.jpg",
     },
     {
       name: "Dr. Kammu Verma",
       title: "Principal",
       credentials: "Ph.D , M.sc Medical Surgical Nursing",
-      image: "/src/Assets/KV.jpg",
+      image: "/KV.jpg",
     }
   ];
 

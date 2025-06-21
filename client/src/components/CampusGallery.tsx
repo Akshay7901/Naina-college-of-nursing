@@ -7,38 +7,38 @@ const CampusGallery = () => {
 
   const campusImages = [
     {
-      url: "/src/Assets/pic1.jpg",
+      url: "/pic1.jpg",
       title: "Main Campus Building",
       description: "Our state-of-the-art main building houses modern classrooms and administrative offices"
     },
     
     {
-      url: "/src/Assets/pic4.jpg",
+      url: "/pic4.jpg",
       title: "Medical Library",
       description: "Extensive collection of medical and nursing resources for research and study"
     },
     {
-      url: "/src/Assets/pic5.jpg",
+      url: "/pic5.jpg",
       title: "Student Study Areas",
       description: "Comfortable collaborative spaces designed for group study and discussion"
     },
     {
-      url: "/src/Assets/pic6.jpg",
+      url: "/pic6.jpg",
       title: "Student Study Areas",
       description: "Comfortable collaborative spaces designed for group study and discussion"
     },
     {
-      url: "/src/Assets/pic7.jpg",
+      url: "/pic7.jpg",
       title: "Student Study Areas",
       description: "Comfortable collaborative spaces designed for group study and discussion"
     },
     {
-      url: "/src/Assets/pic8.jpg",
+      url: "/pic8.jpg",
       title: "Student Study Areas",
       description: "Comfortable collaborative spaces designed for group study and discussion"
     },
     {
-      url: "/src/Assets/pic9.jpg",
+      url: "/pic9.jpg",
       title: "Student Study Areas",
       description: "Comfortable collaborative spaces designed for group study and discussion"
     },

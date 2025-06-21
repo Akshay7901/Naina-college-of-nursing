@@ -16,7 +16,7 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
               <div>
-  <img src="/src/Assets/logo.jpg" alt="Mercy College Logo" className="h-40 w-50" />
+  <img src="/logo.jpg" alt="Mercy College Logo" className="h-40 w-50" />
 </div>
               {/* <div>
                 <h3 className="text-2xl font-bold">Naina College of Nursing</h3>

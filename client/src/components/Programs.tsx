@@ -6,13 +6,13 @@ const Programs = () => {
       title: "Bachelor of Science in Nursing (B.Sc. Nursing)",
       duration: "4 Years",
       features: ["4 year Degree Course", "ELIGIBILITY – +2 Medical Stream"],
-      image: "/src/Assets/pic2.jpg"
+      image: "/pic2.jpg"
     },
     {
       title: "General Nursing and Midwifery (GNM)",
       duration: "3 Years",
       features: ["3 year Diploma Course", "ELIGIBILITY – +2 Any Stream"],
-      image: "/src/Assets/pic3.jpeg"
+      image: "/pic3.jpeg"
     },
     {
       title: "Post Basic B.Sc. Nursing (PB B.Sc.)",

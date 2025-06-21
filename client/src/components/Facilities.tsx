@@ -35,37 +35,37 @@ const Facilities = () => {
       icon: Microscope,
       title: "Nursing Foundation Lab",
       description: "High-fidelity simulation lab with modern equipment.",
-      image: "/src/Assets/NFL.png"
+      image: "/NFL.png"
     },
     {
       icon: Heart,
       title: "Anatomy Lab",
       description: "Clinical training with hospital-grade supplies.",
-      image: "/src/Assets/AL.png"
+      image: "/AL.png"
     },
     {
       icon: BookOpen,
       title: "Library",
       description: "50,000+ medical texts and digital resources.",
-      image: "/src/Assets/Ly.png"
+      image: "/Ly.png"
     },
     {
       icon: Laptop,
       title: "Community Lab",
       description: "Labs with nursing software and learning tools.",
-      image: "/src/Assets/CoL.png"
+      image: "/CoL.png"
     },
     {
       icon: Laptop,
       title: "Computer Labs",
       description: "Modern labs with software and internet access.",
-      image: "/src/Assets/CL.png"
+      image: "/CL.png"
     },
     {
       icon: Laptop,
       title: "Maternal & Child Health Lab",
       description: "Focused on women's and child healthcare training.",
-      image: "/src/Assets/MACHL.png"
+      image: "/MACHL.png"
     }
   ];
 
